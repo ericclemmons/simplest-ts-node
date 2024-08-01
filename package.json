@@ -5,7 +5,8 @@
   "description": "",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "test": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "test": "tsx --test **/*.test.ts"
   },
   "keywords": [],
   "author": "",
