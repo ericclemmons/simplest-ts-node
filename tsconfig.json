@@ -1,0 +1,20 @@
+// Are You Using tsc To Turn Your .ts Files Into .js Files?
+// https://github.com/total-typescript/tsconfig#are-you-using-tsc-to-turn-your-ts-files-into-js-files
+{
+  // Yes, my code runs in the DOM:
+  // "extends": "@total-typescript/tsconfig/tsc/dom/app", // For an app
+  // "extends": "@total-typescript/tsconfig/tsc/dom/library", // For a library
+  // "extends": "@total-typescript/tsconfig/tsc/dom/library-monorepo", // For a library in a monorepo
+  // Yes, my code _doesn't_ run in the DOM (for instance, in Node.js):
+  // "extends": "@total-typescript/tsconfig/tsc/no-dom/app", // For an app
+  // "extends": "@total-typescript/tsconfig/tsc/no-dom/library", // For a library
+  // "extends": "@total-typescript/tsconfig/tsc/no-dom/library-monorepo" // For a library in a monorepo
+  // No, my code runs in the DOM:
+  // "extends": "@total-typescript/tsconfig/bundler/dom/app", // For an app
+  // "extends": "@total-typescript/tsconfig/bundler/dom/library", // For a library
+  // "extends": "@total-typescript/tsconfig/bundler/dom/library-monorepo", // For a library in a monorepo
+  // No, my code _doesn't_ run in the DOM (for instance, in Node.js):
+  // "extends": "@total-typescript/tsconfig/bundler/no-dom/app", // For an app
+  "extends": "@total-typescript/tsconfig/bundler/no-dom/library" // For a library
+  // "extends": "@total-typescript/tsconfig/bundler/no-dom/library-monorepo" // For a library in a monorepo
+}
